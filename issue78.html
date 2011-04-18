@@ -39,7 +39,7 @@
   some orphaned packages. Does anyone else want to take a lonely but loving
   package into their home? Anyone?</p>
   	  
-  <h4></h4>
+  <h4>bgalakazam is making great progress</h4>
 
   <p>I reported in the previous newsletter issue that Frugalware user
   bgalakazam had begun translating Frugalware's custom applications and wiki
@@ -47,16 +47,47 @@
   always great to see the work of new contributors and bgalakazam has had a
   great start.</p>
 
+  <h4>GNOME 3 is now available</h4>
+  
+  <p>As announced on FIMXE by FIXME, GNOME 3 is now available in the 
+  Frugalware 'current' repository. This is arguably the most significant 
+  GNOME release because it completely changes the way users interact with the
+  desktop. Some people are excited about the release and others are worried by
+  such a big change. Try it for yourself and see what you think.</p>
+
   <h4>Mores wallpaper proposal</h4>
   
   <p>We have had a wallpaper submitted for consideration as the default for 
   Frugalware release 1.5 - code-name 'Mores'. The wallpaper was created by 
   Leo, who also created the default wallpaper for release 1.3 (FIXME - 
   check). The wallpaper is still a work in progress but below you can see 
-  the base image, to which the logo would be added. Leo has created many 
-  more than two wallpapers and all of his work can be seen in his 
+  the base image, to which the logo will be added. Leo has created many
+  more than two wallpapers and all of his work can be seen in his
   http://FIXME[online gallery]. Thanks to Leo for submitting this wallpaper 
   and perhaps it will inspire others to submit their own work.</p>
+
+  <img src="issue78_wallpaper_high_energy.png" alt="Wallpaper proposed as the default for 1.5" title="" />
+
+  <h4>How do you know the end of the world has come?</h4>
+  
+  <p>...Bouleetbil has not made a git commit for more than 5 minutes. 
+  Seriously, if you subscribe to the git commit mailing list you will have 
+  seen a <strong>lot</strong> of activity from Bouleetbil. He has been
+  incredibly busy packaging GNOME 3, including all the test releases, while 
+  still maintaining his packages in the current repository. Thanks to him 
+  for his hard work and dedication.</p>
+
+  <h4>Move to /tmpfs instead of FIXME</h4>
+  
+  <p>On FIXME_date Frugalware developer VMiklos announced that he wanted all 
+  packages which used FIXME modified so that they used FIXME instead. He 
+  started this change for his own packages and asked all other package 
+  maintainers to do the same. In only FIMXE days the change for all packages 
+  was complete, which goes to show just how quickly the development team can 
+  respond when required. "But what is /tmpfs?" I hear you ask. Well...a 
+  simple explanation is that it's a file system in which files are stored 
+  temporarily. In other words I don't know. :) If you really want to know,
+  perhaps do an Internet search or ask in the forums, or IRC channels.</p>
 
 
   <br />
@@ -104,9 +135,23 @@
   <div class="postheader">Tips and Tricks</div>
   <img class="face" src="/images/newsletter/terminal.png" width="85" height="85" alt=""><br>
 
-  <h4></h4>
+  <h4>Missing dependencies</h4>
 
-  <p></p>
+  <p>Frugalware's package manager - pacman-g2 - handles dependencies so that 
+  if you install package A and it requires packages B and C to work, all 
+  three packages are installed. Some applications have optional features and 
+  for these, the dependencies system doesn't apply. Take the example of a 
+  GStreamer-based media player as an example. If every one of the GStreamer 
+  plugins required to support every available audio format was installed, it 
+  might require a lot of disk space. Instead the person packaging the 
+  application may decide that only the most common audio formats will be
+  specified as dependencies. When you try to play an unsupported audio file,
+  it simply won't play. If you're in this situation the best tip is to start
+  the application in a terminal and try playing or accessing the problem file.
+  Hopefully you will get a message like "Plugin X could not be found." in the
+  console, in which case you can then find and install the required package.
+  If you're not sure just what the message means, or what to do about it,
+  ask online via the forums or users' IRC channel.</p>
   
 
   <h4>Do you have any tips or tricks to share?</h4>
@@ -119,9 +164,14 @@
   <div class="postheader">Focus on Packages</div>
   <img class="face" src="/images/newsletter/package-new.png" width="85" height="85" alt=""><br>
 
-  <h4>pogo</h4>
 
-  <p></p>
+  <p>In creating Pogo, its developer's aim was to create a music player with 
+  an easy-to-use interface. It doesn't support tags so your music library 
+  must be arranged with artists and albums in their own directories and 
+  sub-directories. As  you can see below, there are just two panes: the left 
+  which shows the file browser and the right which shows the playlist. At the 
+  very top of the window are a search box, playback controls and a preferences 
+  button. Preferences include only: </p>
 
 
   <img src="issue78_screenshot_pogo_t.png" alt="Screenshot of Pogo">
@@ -152,20 +202,57 @@
   <p>If you would like to submit your own desktop screenshot, please submit it
   the Frugalware forums and I’ll copy it from there.</p>
 
-  <h4></h4>
+  <h4>Slown</h4>
 
-  <p></p>
+  <p>Slown's desktop screenshot was submitted to the Frugalware forums on 2
+  September 2010 and features the GNOME desktop environment with the
+  following themeing:</p>
 
+  <ul>
+	  <li>GTK - Equinox</li>
+	  <li>Icons - Faenza</li>
+	  <li>Metacity theme - Equinox</li>
+  </ul>
+
+  <img src="issue78_desktopscreenshot_slown.png" alt="Screenshot of Slown's 
+  desktop" title="" width="400"/>
+
+
+  <h4>Pingax</h4>
+
+  <p>Pingax's desktop was submitted to the Frugalware forums on February 13, 
+  2011 and features the Awesome window manager.</p>
+
+  <img src="issue78_desktopscreenshot_pingax.png" alt="Screenshot of 
+  Pingax's desktop" title="" width="400"/>
+
+
+  <h4>FrugalNL</h4>
+
+  <p>FrugalNL is a relative newcomer to Frugalware but has already started 
+  making a contribution in the forums, helping others with their questions. 
+  He/she has also decided to try GNOME 3 and below are recent screenshots of 
+  both GNOME 2 and GNOME 3 desktops.</p>
+
+  <img src="issue78_desktopscreenshot_frugalnl1.png" alt="Screenshot of 
+  Pingax's GNOME 2 desktop" title="" width="400"/>
+
+  <img src="issue78_desktopscreenshot_frugalnl2.png" alt="Screenshot of 
+  Pingax's GNOME 3 desktop" title="" width="400"/>
+
+
+<!--
   <a id="imagebox" href="http://frugalware.org/images/newsletter/issue77_userscreenshot_lenezir.png" title="Screenshot of Lenezir's desktop"><img src="http://frugalware.org/images/newsletter/issue77_userscreenshot_lenezir_t.png" alt="Screenshot of Lenezir's desktop"></a>
+-->
 
 
   <br />
   <div class="postheader">From the wiki to you...</div>
   <img class="face" src="/images/newsletter/wiki.png" width="85" height="85" alt="" /><br />
 
-  <p>This new section of the newsletter highlights recent additions and changes
-  to the wiki. Thanks to developer Devil505 for suggesting the topic be added
-  to the newsletter.</p>
+  <p>This new section of the newsletter highlights recent additions and 
+  changes to the wiki. Thanks to developer Devil505 for suggesting the topic 
+  be added to the newsletter.</p>
 
   <ul>
     <li>
@@ -178,8 +265,8 @@
   <img class="face" src="/images/icons/bug.png" width="85" height="85" alt=""><br>
   
   <p>The following table gives you a overview of activity on bugs and 
-  feature requests as at FIXME. Click on the link in each cell 
-  for details of the relevant bug reports or feature requests.</p>
+  feature requests as at FIXME. Click on the link in each cell for details 
+  of the relevant bug reports or feature requests.</p>
 
 
   <table rules="all" width="80%" frame="border" cellspacing="0" cellpadding=
