@@ -1,11 +1,10 @@
   <img class="face" src="/images/icons/newsletter.png" width="85" height="85" alt=""><br />
 
-  <h2>Frugalware Linux Newsletter - Issue FIXME</h2>
+  <h2>Frugalware Linux Newsletter - Issue 79</h2>
 
   <p>…to inform…to educate…to entertain</p>
 
-  <p>&quot;&quot;<em>
-  </em></p>
+  <p>&quot;&quot;</p>
 
 
   <h2>Welcome</h2>
@@ -17,7 +16,7 @@
   <p>Features of this issue include:</p>
 
   <ul>
-    <li></li>
+    <li>FIXME</li>
   </ul>
 
   <br />
@@ -28,31 +27,33 @@
   <p>Here’s a selection of recent events and other items that you might find
   interesting:</p>
 
-  <h4>New features for pacman-g2</h4>
+  <h4>New contributor - Baste</h4>
   
-  <p>Two new features were recently added to pacman-g2: and new operation and
-  a new Query option.</p>
+  <p>Frugalware user Sébastien VINCENT (AKA Baste) - has been making a great
+  contribution, providing some patches and FrugalBuilds for new packages.
+  The quality of his work has been great and all his contributions have been
+  accepted. I wonder if I should write the "New Frugalware developer"
+  announcement in advance? :)</p>
 
-  <h5>pacman-g2 -P</h5>
-  <p>The new operation uses the parameter "-P" or "--ps" and lists all
-  processes which are using deleted files. From this information you can
-  confirm if any services are affected and if so, restart them.</p>
-
-  <h5>pacman-g2 -Qf</h5>
-  <p>The new Query option "-Qf" checks the specified package or all packages
-  to confirm if all the files owned by that package are present. This option is
-  very useful if you believe a package might be incomplete; perhaps you think
-  a library file might be missing. Here's sample output you would see if a file
-  was missing:</p>
-
-  <pre>pacman-g2 /usr/share/doc/pacman-g2-3.8.2/TODO	No such file or directory.</pre>
-
-  <p>For full details of all pacman-g2's operations and options, refer to its
-  man page.</p>
-
-  <h4></h4>
+  <h4>Frugalware GNOME Shell theme</h4>
   
-  <p></p>
+  <p>Frugalware developers Devil505 and bouleetbil worked together to create 
+  a GNOME Shell theme which features the Orta theme and the default 
+  wallpaper for Frugalware release 1.5. The result looks great and is 
+  certainly different to the rather plain default theme. The Linux news web 
+  site LXnews.org <a href="">featured</a> the theme on FIXME_DATE.</p>
+
+  <h4>Thanks for your bug reports</h4>
+  
+  <p>Thankyou to everyone who reports bugs in the Frugalware Bug Tracker 
+  System (BTS). Without these reports we wouldn't know that these problems 
+  exist and so not be able to fix them. Even better is the fact that it's 
+  not just a few people reporting bugs but different people. It's great to 
+  see "new" names appearing because it confirms that Frugalware is useful to 
+  so many people. If you find a problem then please report it in the BTS but 
+  before doing so, please read <a href=
+  "http://frugalware.org/docs/stable/bugs.html">Frugalware Bug Reporting 
+  HowTo</a>.</p>
 
   <br />
   <div class="postheader">New Packages</div>
@@ -76,7 +77,22 @@
         <th align="left" valign="top">Maintainer</th>
       </tr>
     </thead>
+
     <tbody>
+      <tr>
+        <td align="left" valign="top">
+          <p class="table">package</p>
+        </td>
+
+        <td align="left" valign="top">
+          <p class="table">Description</p>
+        </td>
+
+        <td align="left" valign="top">
+          <p class="table">Maintainer</p>
+        </td>
+      </tr>
+
       <tr>
         <td align="left" valign="top">
           <p class="table"></p>
@@ -90,6 +106,7 @@
           <p class="table"></p>
         </td>
       </tr>
+
     </tbody>
   </table>
   
@@ -97,9 +114,31 @@
   <div class="postheader">Tips and Tricks</div>
   <img class="face" src="/images/newsletter/terminal.png" width="85" height="85" alt=""><br>
 
-  <h4></h4>
+  <h4>Skeleton files</h4>
 
-  <p></p>
+  <p>When a new user is created on Linux, the contents of the <pre>/etc/skel 
+  </pre> directory are copied to the users' home page. This allows the 
+  computer's administrator to specify configuration settings and/or have 
+  folders already available when the user first logs on. For anyone who <b>is
+  </b> the administrator in their home ( :D ) you might use this option, for
+  example, to encourage everyone to store files by type in specific folders:
+  Videos, Photos, Downloads for example. To do this you create directories of
+  the required names in /etc/skel (as user 'root'). Note that this applies
+  <em>only</em> to newly created users, not existing users.</p>
+
+
+  <h4>System information script</h4>
+  
+  <p>Some time ago, Frugalware developer Devil505 and Frugalware user Aptano 
+  modified a Perl script which presents information about the GUI 
+  environment on the console. A great feature of this is that as well as the 
+  system information it displays the Frugalware logo in ASCII art. This 
+  works well when you combine it with a desktop screenshot because it 
+  clearly identifies the distribution. Look at Botchchikii's screenshot in 
+  the Users' Desktop Screenshots section below to see an example of the 
+  script's output. To get a copy of the script itself, go to <a href= 
+  "http://blog.glag.la/article2/capture-decran-sous-frugalware">this</a> 
+  page.</p>
 
 
   <h4>Do you have any tips or tricks to share?</h4>
@@ -112,28 +151,45 @@
   <div class="postheader">Focus on Packages</div>
   <img class="face" src="/images/newsletter/package-new.png" width="85" height="85" alt=""><br>
 
-  <h4>Minitube</h4>
+  <h4>Quod Libet</h4>
 
-  <p>Watching YouTube videos in a web browser has its problems, since it
-  requires a Flash plugin. Minitube aims to make this easier because it allows
-  you to watch them in a GUI application instead. Minitube's user interface is
-  quite simple, with a search input field that allows you to search videos or
-  channels by keywords. Once you have found what you're looking for you can
-  play the video immediately or add it to a playlist. Often people publish to
-  YouTube educational videos or "screencasts" and Minitube's playlist feature
-  is very useful because you can set up the videos to play in sequence.</p>
-
-  <p>Playing a video  is very easy to operate, with the standard controls in
-  a bar just below the main menu. You can choose from three user interface
-  modes while playing a video: standard, compact and fullscreen. If you want
-  to save the video to watch later, you simply choose Video > Download from
-  the main menu. If instead you want to </p>
-
-  <img src="issue80_screenshot_minitube.png" width="400">
+  <p>I'm sorry to feature another audio player after featuring Pogo in the 
+  most recent newsletter but I couldn't help myself. :) Quod Libet is a 
+  full-featured audio player developed in Python and uses the GStreamer
+  framework. For anyone who is looking for an alternative to players such as
+  Banshee, Rhythmbox or Amarok, Quod Libet could be just what you're looking
+  for.</p>
   
-  <h4></h4>
+  <p>Its features include:</p>
+  <ul>
+    <li>Album art;</li>
+    <li>Track ratings;</li>
+    <li>Internet radio;</li>
+    <li>Numerous plugins including Scrobbling support, Tray Icon, Alarm Clock
+    and Lullaby.</li>
+  </ul>
 
-  <p></p>
+  <p>Quod Libet makes it very easy to play your music in the way you want. It
+  offers many different ways to browse or search your music and assemble a
+  playlist. If you need to correct your music's tags you can do this easily on
+  either individual files or several files at once. Tag editing even includes
+  some common built-in functions including replacing underscores with spaces,
+  removing characters which are incompatible with Windows and removing
+  non-ASCII characters.</p>
+  
+  <p>One quite interesting feature is its Tray Icon plugin. Of course most
+  audio players provide system tray support so that you can continue listening
+  to a playlist without the player's window cluttering your desktop. Quod
+  Libet's tray icon is better than most though because, with the mouse
+  cursor over the icon, scrolling the mouse's wheel will change volume and
+  holding down the Shift key and scrolling the wheel will change track. As
+  with other music players, you can also right-click on the icon and get more
+  functions.</p>
+
+  <p>Even if you're currently using a music player, try Quod Libet because it
+  offers a great range of features while still being very easy to use.</p>
+  
+  <img src="issue79_quodlibet.png" width="200">
 
 
   <br />
@@ -152,25 +208,45 @@
   <p>If you would like to submit your own desktop screenshot, please submit it
   the Frugalware forums and I'll copy it from there.</p>
 
-  <h4></h4>
+  <h4>Botchchikii</h4>
 
-  <p></p>
+  <img src="issue79_desktopscreenshot_botchchikii.png" width="200" alt="Botchchikii" title="" />
+
+  <p>Change wallpaper on my Awesome, and I joined a transparent urxvt and cairo-compgr</p>
+
+  <h4>Springbank</h4>
+
+  <img src="issue79_desktopscreenshot_springbank.png" width="200" alt="Springbank" title="" />
+
+  <p>Gnome3
+GTK theme: Dark Orta
+Icons: Faenza
+Docky
+</p>
+
+  <h4>Slown</h4>
+
+  <img src="issue79_desktopscreenshot_slown.png" width="200" alt="Slown" title="" />
+  
+  <p>Slown's desktop screenshot.</p>
 
 
   <br />
   <div class="postheader">From the wiki to you...</div>
-  <img class="face" src="/images/newsletter/wiki.png" width="85" height="85" /><br />
+  <img class="face" src="/images/newsletter/wiki.png" width="85" height="85" alt="" /><br />
 
   <p>This new section of the newsletter highlights recent additions and 
   changes to the wiki.</p>
 
   <ul>
-    <li></li>
+    <li>
+      <p></p>
+    </li>
   </ul>
   
   <br />
   <div class="postheader">Bug Fixes</div>
-  <img class="face" src="/images/icons/bug.png" width="85" height="85"><br>
+  <img class="face" src="/images/icons/bug.png" width="85" height="85" alt=""><br>
   
   <p>The following table gives you a overview of activity on bugs and 
   feature requests as at FIXME. Click on the link in each cell for 
@@ -203,18 +279,18 @@
 
         <td align="left"><a href=
         "http://bugs.frugalware.org/index.php?string=&amp;project=1&amp;type%5B%5D=1&amp;sev%5B%5D=&amp;pri%5B%5D=&amp;due%5B%5D=&amp;reported%5B%5D=&amp;cat%5B%5D=&amp;status%5B%5D=open&amp;percent%5B%5D=&amp;opened=&amp;dev=&amp;closed=&amp;duedatefrom=&amp;duedateto=&amp;changedfrom=&amp;changedto=&amp;openedfrom=&amp;openedto=&amp;closedfrom=&amp;closedto=&amp;do=index">
-        188</a></td>
+        191</a></td>
       </tr>
 
       <tr>
         <td align="left">Opened since the previous newsletter</td>
 
         <td align="left"><a href=
-        "http://bugs.frugalware.org/index.php?string=&amp;project=1&amp;type%5B%5D=1&amp;sev%5B%5D=&amp;pri%5B%5D=&amp;due%5B%5D=&amp;reported%5B%5D=&amp;cat%5B%5D=&amp;status%5B%5D=open&amp;percent%5B%5D=&amp;opened=&amp;dev=&amp;closed=&amp;duedatefrom=&amp;duedateto=&amp;changedfrom=&amp;changedto=&amp;openedfrom=2011-04-19&amp;openedto=&amp;closedfrom=&amp;closedto=&amp;do=index">
-        6</a></td>
+        "http://bugs.frugalware.org/index.php?string=&amp;project=1&amp;type%5B%5D=1&amp;sev%5B%5D=&amp;pri%5B%5D=&amp;due%5B%5D=&amp;reported%5B%5D=&amp;cat%5B%5D=&amp;status%5B%5D=open&amp;percent%5B%5D=&amp;opened=&amp;dev=&amp;closed=&amp;duedatefrom=&amp;duedateto=&amp;changedfrom=&amp;changedto=&amp;openedfrom=2011-03-24&amp;openedto=&amp;closedfrom=&amp;closedto=&amp;do=index">
+        10</a></td>
 
         <td align="left"><a href=
-        "http://bugs.frugalware.org/index.php?string=&amp;project=1&amp;type%5B%5D=2&amp;sev%5B%5D=&amp;pri%5B%5D=&amp;due%5B%5D=&amp;reported%5B%5D=&amp;cat%5B%5D=&amp;status%5B%5D=open&amp;percent%5B%5D=&amp;opened=&amp;dev=&amp;closed=&amp;duedatefrom=&amp;duedateto=&amp;changedfrom=&amp;changedto=&amp;openedfrom=2011-04-19&amp;openedto=&amp;closedfrom=&amp;closedto=&amp;do=index">
+        "http://bugs.frugalware.org/index.php?string=&amp;project=1&amp;type%5B%5D=2&amp;sev%5B%5D=&amp;pri%5B%5D=&amp;due%5B%5D=&amp;reported%5B%5D=&amp;cat%5B%5D=&amp;status%5B%5D=open&amp;percent%5B%5D=&amp;opened=&amp;dev=&amp;closed=&amp;duedatefrom=&amp;duedateto=&amp;changedfrom=&amp;changedto=&amp;openedfrom=2011-03-24&amp;openedto=&amp;closedfrom=&amp;closedto=&amp;do=index">
         2</a></td>
       </tr>
 
@@ -222,11 +298,11 @@
         <td align="left">Closed since the previous newsletter</td>
 
         <td align="left"><a href=
-        "http://bugs.frugalware.org/index.php?string=&amp;project=1&amp;type%5B%5D=1&amp;sev%5B%5D=&amp;pri%5B%5D=&amp;due%5B%5D=&amp;reported%5B%5D=&amp;cat%5B%5D=&amp;status%5B%5D=closed&amp;percent%5B%5D=&amp;opened=&amp;dev=&amp;closed=&amp;duedatefrom=&amp;duedateto=&amp;changedfrom=&amp;changedto=&amp;openedfrom=&amp;openedto=&amp;closedfrom=2011-04-19&amp;closedto=&amp;do=index">
-        16</a></td>
+        "http://bugs.frugalware.org/index.php?string=&amp;project=1&amp;type%5B%5D=1&amp;sev%5B%5D=&amp;pri%5B%5D=&amp;due%5B%5D=&amp;reported%5B%5D=&amp;cat%5B%5D=&amp;status%5B%5D=closed&amp;percent%5B%5D=&amp;opened=&amp;dev=&amp;closed=&amp;duedatefrom=&amp;duedateto=&amp;changedfrom=&amp;changedto=&amp;openedfrom=&amp;openedto=&amp;closedfrom=2011-03-24&amp;closedto=&amp;do=index">
+        12</a></td>
 
         <td align="left"><a href=
-        "http://bugs.frugalware.org/index.php?string=&amp;project=1&amp;type%5B%5D=1&amp;sev%5B%5D=&amp;pri%5B%5D=&amp;due%5B%5D=&amp;reported%5B%5D=&amp;cat%5B%5D=&amp;status%5B%5D=closed&amp;percent%5B%5D=&amp;opened=&amp;dev=&amp;closed=&amp;duedatefrom=&amp;duedateto=&amp;changedfrom=&amp;changedto=&amp;openedfrom=&amp;openedto=&amp;closedfrom=2011-04-19&amp;closedto=&amp;do=index">
+        "http://bugs.frugalware.org/index.php?string=&amp;project=1&amp;type%5B%5D=1&amp;sev%5B%5D=&amp;pri%5B%5D=&amp;due%5B%5D=&amp;reported%5B%5D=&amp;cat%5B%5D=&amp;status%5B%5D=closed&amp;percent%5B%5D=&amp;opened=&amp;dev=&amp;closed=&amp;duedatefrom=&amp;duedateto=&amp;changedfrom=&amp;changedto=&amp;openedfrom=&amp;openedto=&amp;closedfrom=2011-03-24&amp;closedto=&amp;do=index">
         6</a></td>
       </tr>
     </tbody>
@@ -245,7 +321,6 @@
   been discovered and fixed in the 1.4 release since the previous newsletter.
   </p>
 
-  <p>FIXME</p>
 
   <br />
   <div class="postheader">About the newsletter</div>
@@ -257,6 +332,15 @@
   phayz). Credit for the Frugalware distribution goes to the development
   team.</p>
 
+  <h4>Translations</h4>
+
+  <p>Depending on people’s workload, the newsletter <strong>may</strong> be
+  translated into <a href="http://frugalware.fr">French</a> and <a href=
+  "http://frugalware.dk/?cat=5">Danish</a> by their respective communities as
+  soon as possible. Please be patient as it can take some time to translate
+  each issue. Thanks to all those involved in providing and hosting these
+  translations.</p>
+
   <h4>Release</h4>
 
   <p>To allow time for review and corrections, each newsletter is written ahead
@@ -264,6 +348,7 @@
   the few days before its release - e.g. security fixes. To be sure that you’ve
   got the very latest information on these topics, go to the appropriate page
   of the Frugalware web site.</p>
+
   
   <br />
   <div class="postheader">Comments</div>
